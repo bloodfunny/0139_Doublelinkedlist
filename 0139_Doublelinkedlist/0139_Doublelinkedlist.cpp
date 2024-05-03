@@ -82,5 +82,17 @@ void deleteNode()
 	cout << "\nEnter ehe roll number of the student whose record is to be deleted: ";
 	cin >> ro11No; 
 
+	if (START == NULL)
+	{
+		cout << "List is empty" << endl;
+		return;
+	}
 
+	current = START;
+	previous = NULL;
+
+	while (current != NULL && current->noMhs != ro11No)
+	{
+
+	}
 }
