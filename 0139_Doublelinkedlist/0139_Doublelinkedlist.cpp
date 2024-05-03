@@ -73,3 +73,8 @@ bool search(int ro11no, Node** previous, Node** current)
 	}
 	return (*current != NULL);
 }
+
+void deleteNode()
+{
+
+}
