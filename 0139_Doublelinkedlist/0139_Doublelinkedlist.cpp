@@ -5,15 +5,15 @@ struct Node
 {
 	int noMhs;
 	string name;
-	Node* next;
-	Node* prev;
+	Node *next;
+	Node *prev;
 };
 
-Node* START = NULL;
+Node *START = NULL;
 
 void addNode()
 {
-	Node* newNode = new Node();
+	Node *newNode = new Node();
 	cout << "\nEnter the roll number of the student: ";
 	cin >> newNode->noMhs;
 	cout << "\nEnter the name of the student: ";
@@ -60,4 +60,9 @@ void addNode()
 			START = newNode;
 		}
 	}
+}
+
+bool search(int ro11no, Node** previous, Node** current)
+{
+	
 }
