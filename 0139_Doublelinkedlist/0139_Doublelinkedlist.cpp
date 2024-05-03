@@ -19,3 +19,14 @@ void addNode()
 	cout << "\nEnter the name of the student: ";
 	cin >> newNode->name;
 
+	if (START == NULL || newNode->noMhs <= START->noMhs)
+	{
+		if (START != NULL && newNode->noMhs == START->noMhs)
+		{
+			cout << "\033[31mDuplicate roll numbers not allowed\033[0m" << endl;
+			return;
+		}
+		
+	}
+
+}
