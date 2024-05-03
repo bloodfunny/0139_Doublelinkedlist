@@ -64,5 +64,12 @@ void addNode()
 
 bool search(int ro11no, Node** previous, Node** current)
 {
-	
+	*previous = NULL;
+	*current = START;
+	while (*current != NULL && (*current)->noMhs != ro11no)
+	{
+		*previous = *current;
+		*current = (*current)->next;
+	}
+	return (*current != NULL);
 }
