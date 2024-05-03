@@ -132,5 +132,21 @@ bool listEmpty()
 
 void traverse()
 {
+	if (listEmpty())
+		cout << "\nList is empty " << endl;
+	else
+	{
+		cout << "\nRecords in ascending orderof roll number ara:" << endl;
+		Node* currentNode = START;
+		while (currentNode != NULL)
+		{
+			cout << currentNode->noMhs << currentNode->name << endl;
+			currentNode = currentNode->next;
+		}
+	}
+}
+
+void revtraverse()
+{
 
 }
