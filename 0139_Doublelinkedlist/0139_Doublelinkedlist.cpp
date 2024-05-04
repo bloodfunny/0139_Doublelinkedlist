@@ -202,7 +202,27 @@ int main()
 			char ch;
 			cin >> ch;
 
-
+			switch (ch)
+			{
+			case '1':
+				addNode();
+				break;
+			case '2':
+				deleteNode();
+				break;
+			case '3':
+				traverse();
+				break;
+			case '5':
+				revtraverse();
+				break;
+			case '6':
+				return 0;
+			default:
+				cout << "\nInvalid option" << endl;
+				break;
+			}
 		}
+
 	}
 }
